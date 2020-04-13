@@ -39,14 +39,6 @@ query BlogPostQuery($uid: String) {
               label
               primary{
                 image
-                imageSharp {
-                  absolutePath
-                  childImageSharp {
-                    fluid(maxWidth: 800) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
                 caption
               }
             }
@@ -54,14 +46,6 @@ query BlogPostQuery($uid: String) {
               type
               label
               primary {
-                imageSharp {
-                  absolutePath
-                  childImageSharp {
-                    fluid(maxWidth: 800) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
                 image
                 text
               }
@@ -71,14 +55,6 @@ query BlogPostQuery($uid: String) {
               label
               fields {
                 grid_image
-                grid_imageSharp {
-                  absolutePath
-                  childImageSharp {
-                    fluid(maxWidth: 800, maxHeight: 800) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
                 grid_image_link {
                   ... on PRISMIC__ExternalLink {
                     url
