@@ -56,7 +56,6 @@ typings/
 
 # gatsby files
 .cache/*
-!.cache/redux
 public
 
 # Mac files
