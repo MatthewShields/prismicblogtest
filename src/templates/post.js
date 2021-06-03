@@ -48,6 +48,7 @@ query BlogPostQuery($uid: String) {
               primary {
                 image
                 text
+                image_position_left
               }
             }
             ... on PRISMIC_PostBodyImage_grid {
